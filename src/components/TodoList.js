@@ -32,8 +32,12 @@ class TodoList extends React.Component {
     if (todo.userId === this.props.currentUserId) {
       return (
         <div className="right floated content">
-          <button className="ui green button">Edit</button>
-          <button className="ui red button">Delete</button>
+          <Link to={`/edit/${todo.id}`} className="ui green button">
+            Edit
+          </Link>
+          <Link to={`/delete/${todo.id}`} className="ui red button">
+            Delete
+          </Link>
         </div>
       );
     }
@@ -54,10 +58,15 @@ class TodoList extends React.Component {
   render() {
     return (
       <div>
-        <div className="ui middle aligned divided list">
-          {this.renderList()}
+        <p style={{ textAlign: "center" }}>
+          (You must sign in with Google to edit/delete Todos!)
+        </p>
+        <div>
+          <div className="ui middle aligned divided list">
+            {this.renderList()}
+          </div>
+          {this.renderCreateButton()}
         </div>
-        {this.renderCreateButton()}
       </div>
     );
   }

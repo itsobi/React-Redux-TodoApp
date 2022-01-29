@@ -43,6 +43,8 @@ export const editTodo = (id, formValues) => {
   return async (dispatch) => {
     const response = await todos.put(`/streams/${id}`, formValues);
     dispatch({ type: "EDIT_TODO", payload: response.data });
+    // taking user back to todoList using programmatic navigation
+    history.push("/");
   };
 };
 

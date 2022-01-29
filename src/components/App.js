@@ -13,7 +13,7 @@ const App = () => {
         <Header />
         <Route path="/" exact component={TodoList} />
         <Route path="/create" exact component={CreateTodo} />
-        <Route path="/edit" exact component={EditTodo} />
+        <Route path="/edit/:id" exact component={EditTodo} />
       </Router>
     </div>
   );
