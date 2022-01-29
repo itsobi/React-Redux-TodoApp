@@ -39,7 +39,7 @@ export const fetchTodo = (id) => {
   };
 };
 
-export const editTodo = (id, formValues) => {
+export const editTodoItem = (id, formValues) => {
   return async (dispatch) => {
     const response = await todos.put(`/streams/${id}`, formValues);
     dispatch({ type: "EDIT_TODO", payload: response.data });

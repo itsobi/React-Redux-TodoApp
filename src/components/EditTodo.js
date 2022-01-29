@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { fetchTodo, editTodo } from "../actions";
+import { fetchTodo, editTodoItem } from "../actions";
 import TodoForm from "./TodoForm";
 
 class EditTodo extends React.Component {
@@ -9,7 +9,7 @@ class EditTodo extends React.Component {
   }
 
   onSubmit = (formValues) => {
-    this.props.editTodo(this.props.match.params.id, formValues);
+    this.props.editTodoItem(this.props.match.params.id, formValues);
   };
 
   render() {
@@ -32,4 +32,4 @@ const mapStateToProps = (state, ownProps) => {
   return { todo: state.todos[ownProps.match.params.id] };
 };
 
-export default connect(mapStateToProps, { fetchTodo, editTodo })(EditTodo);
+export default connect(mapStateToProps, { fetchTodo, editTodoItem })(EditTodo);
