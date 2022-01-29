@@ -1,0 +1,22 @@
+{
+  "todos": [
+    {
+      "description": "go to the store",
+      "id": 1
+    },
+    {
+      "description": "pick up bike",
+      "id": 2
+    },
+    {
+      "description": "go to the gym",
+      "userId": "103307060371101745991",
+      "id": 3
+    },
+    {
+      "description": "rice and chicken",
+      "userId": "103307060371101745991",
+      "id": 4
+    }
+  ]
+}
