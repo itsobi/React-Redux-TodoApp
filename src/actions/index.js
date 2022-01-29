@@ -1,4 +1,5 @@
 import todos from "../apis/todos";
+import history from "../history";
 
 // action creators
 export const signIn = (userId) => {
@@ -19,6 +20,8 @@ export const createTodoItem = (formValues) => {
     const { userId } = getState().auth;
     const response = await todos.post("/todos", { ...formValues, userId });
     dispatch({ type: "CREATE_TODO", payload: response.data });
+    // taking user back to todoList using programmatic navigation
+    history.push("/");
   };
 };
 
