@@ -1,21 +1,19 @@
 {
   "todos": [
     {
-      "description": "go to the store",
+      "description": "Go to the store",
+      "userId": "103307060371101745991",
       "id": 1
     },
     {
-      "description": "pick up bike",
+      "description": "Workout @ 2pm",
+      "userId": "103307060371101745991",
       "id": 2
     },
     {
-      "description": "go to the gym",
+      "description": "Pick up shoes",
       "userId": "103307060371101745991",
       "id": 3
-    },
-    {
-      "description": "drink 1 gallon of water now!",
-      "id": 4
     }
   ]
 }

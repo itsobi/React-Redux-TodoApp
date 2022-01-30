@@ -41,14 +41,16 @@ export const fetchTodo = (id) => {
 
 export const editTodoItem = (id, formValues) => {
   return async (dispatch) => {
-    const response = await todos.put(`/todos/${id}`, formValues);
+    const response = await todos.patch(`/todos/${id}`, formValues);
     dispatch({ type: "EDIT_TODO", payload: response.data });
     // taking user back to todoList using programmatic navigation
     history.push("/");
   };
 };
 
-export const deleteTodo = (id) => async (dispatch) => {
-  await todos.delete(`/streams/${id}`);
+export const deleteTodoItem = (id) => async (dispatch) => {
+  await todos.delete(`/todos/${id}`);
   dispatch({ type: "DELETE_TODO", payload: id });
+  // taking user back to todoList using programmatic navigation
+  history.push("/");
 };
