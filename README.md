@@ -1,10 +1,50 @@
-# Getting Started with Create React App
+# React/Redux Todo App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Todo app using React & Redux!
 
-## Available Scripts
+### Project Description
 
-In the project directory, you can run:
+Todo app, where, in order for user to edit/delete todo items, the user must sign in using Google authentication.
+
+### Technologies Used
+
+ReactJS, Redux, OAuth, Semantic-UI.
+
+### Quick Start
+
+- Download zip file or clone the repository on your local machine, and open it up in your code editor.
+
+- In the terminal, run `npm install` to install all libraries allowing you to make request to Spotify API.
+
+- Next, create a `.env` file in the root directory to store your Spotify Credentials as shown below: (name must have prefix of REACT_APP_)
+
+`REACT_APP_CLIENT_ID = XXXXXXXXXXXXXXXXX`
+
+#### How to get Client id
+
+- Go to [console.developers.google.com](https://console.developers.google.com/).
+
+- Click on project dropdown in the top left hand sign, and click "NEW PROJECT".
+
+- Enter a project name and click "CREATE".
+
+- Make sure notification spinner is complete, once it is, double check to see you're in the project you have just created.
+
+- Next, go to the "Credentials" tab, then "OAuth consent screen" and enter in an Application name and hit "Save".
+ 
+- After that, go back to "Credentials", clcik on "Create credentials" and select "OAuth client ID".
+
+- Select, "Web application", and under "Authorized JavaScript origins enter, "http://localhost:3000 and click "Create"
+
+- A pop up of your "client ID" and "client secret" will appear. The only one you will need for this project is the "client ID".
+
+### How to run back-end server to store todos
+
+- In the terminal, cd to the `API` folder in the project.
+
+- Once you are inside `API` directory run `npm start`
+
+- This will run the `API' server on "http://localhost:3001".
 
 ### `npm start`
 
@@ -13,58 +53,3 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
