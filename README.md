@@ -20,7 +20,7 @@ ReactJS, Redux, OAuth, Semantic-UI.
 
 `REACT_APP_CLIENT_ID = XXXXXXXXXXXXXXXXX`
 
-#### How to get Client id
+### How to get Client id
 
 - Go to [console.developers.google.com](https://console.developers.google.com/).
 
