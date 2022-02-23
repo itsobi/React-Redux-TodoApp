@@ -2,15 +2,15 @@
 
 Todo app using React & Redux!
 
-### Project Description
+## Project Description
 
 Todo app, where, in order for user to edit/delete todo items, the user must sign in using Google authentication.
 
-### Technologies Used
+## Technologies Used
 
 ReactJS, Redux, OAuth, Semantic-UI.
 
-### Quick Start
+## Quick Start
 
 - Download zip file or clone the repository on your local machine, and open it up in your code editor.
 
@@ -20,7 +20,7 @@ ReactJS, Redux, OAuth, Semantic-UI.
 
 `REACT_APP_CLIENT_ID = XXXXXXXXXXXXXXXXX`
 
-#### How to get Client id
+### How to get Client id
 
 - Go to [console.developers.google.com](https://console.developers.google.com/).
 
@@ -38,7 +38,7 @@ ReactJS, Redux, OAuth, Semantic-UI.
 
 - A pop up of your "client ID" and "client secret" will appear. The only one you will need for this project is the "client ID".
 
-#### How to run back-end server to store todos
+### How to run back-end server to store todos
 
 - In the terminal, `cd` into the `API` folder in the project.
 
