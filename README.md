@@ -2,15 +2,15 @@
 
 Todo app using React & Redux!
 
-#### Project Description
+### Project Description
 
 Todo app, where, in order for user to edit/delete todo items, the user must sign in using Google authentication.
 
-#### Technologies Used
+### Technologies Used
 
 ReactJS, Redux, OAuth, Semantic-UI.
 
-#### Quick Start
+### Quick Start
 
 - Download zip file or clone the repository on your local machine, and open it up in your code editor.
 
