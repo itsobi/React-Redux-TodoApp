@@ -38,7 +38,7 @@ ReactJS, Redux, OAuth, Semantic-UI.
 
 - A pop up of your "client ID" and "client secret" will appear. The only one you will need for this project is the "client ID".
 
-### How to view the app in the browser
+### How to run the app in the browser
 
 - In the terminal run npm start. This will run the app in development mode, on port [http://localhost:3000](http://localhost:3000).
 
