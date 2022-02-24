@@ -38,6 +38,13 @@ ReactJS, Redux, OAuth, Semantic-UI.
 
 - A pop up of your "client ID" and "client secret" will appear. The only one you will need for this project is the "client ID".
 
+### How to view the app in the browser
+
+- In the terminal run npm start. This will run the app in development mode, on port [http://localhost:3000](http://localhost:3000).
+
+- The page will reload when you make changes.
+You may also see any lint errors in the console.
+
 ### How to run back-end server to store todos
 
 - In the terminal, `cd` into the `API` folder in the project.
@@ -45,11 +52,3 @@ ReactJS, Redux, OAuth, Semantic-UI.
 - Once you are inside `API` directory run `npm start`
 
 - This will run the `API' server on "http://localhost:3001".
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
